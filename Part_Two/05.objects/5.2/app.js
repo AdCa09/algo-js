@@ -9,7 +9,16 @@
     };
     return tvSerie;
   }
-  let details = askTvSerie();
-  let json = JSON.stringify(details, null, 2);
-  alert("Détails de la série:\n\n" + json);
+
+  function randomizeCast(tvSerie) {
+    let arrAléatoire = [];
+    for (let i = 0; i < tvSerie.NamesOfTheCastMembers.length; i++) {
+      let random = Math.floor(
+        Math.random() * tvSerie.NamesOfTheCastMembers.length
+      );
+    }
+    return tvSerie;
+  }
+
+  console.log(randomizeCast(askTvSerie(askTvSerie.tvSerie)));
 })();
